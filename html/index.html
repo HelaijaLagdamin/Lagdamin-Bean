@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagdamin Bean - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+tailwind.config = {
+theme:   {
+extend:   {
+colors:    {
+coffee:     {
+100: '#F5E6C8',
+300: '#D7B19D',
+800: '#6F4E37',
+900: '#3E2723',
+        }
+       }
+      }
+     }
+    }
+    </script>
+</head>
+<body class="bg-coffee-100 text-coffee-900 font-sans flex flex-col min-h-screen">
+
+    <header class="bg-coffee-800 text-coffee-100 shadow-md">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-wider mb-4 md:mb-0 hover:text-coffee-300 transition">
+                Lagdamin Bean
+            </a>
+            <nav>
+                <ul class="flex space-x-6 text-sm uppercase font-semibold tracking-widest">
+                    <li><a href="index.html" class="text-coffee-300 border-b-2 border-coffee-300 pb-1">Home</a></li>
+                    <li><a href="about.html" class="hover:text-coffee-300 transition pb-1">About</a></li>
+                    <li><a href="menu.html" class="hover:text-coffee-300 transition pb-1">Menu</a></li>
+                    <li><a href="contact.html" class="hover:text-coffee-300 transition pb-1">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="relative bg-coffee-900 h-[70vh] flex items-center justify-center text-center text-white bg-cover bg-center bg-no-repeat bg-blend-overlay bg-black/50" style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070&auto=format&fit=crop');">
+            <div class="px-6">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">Your Daily Ritual, Perfected.</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md">Small-batch roasted coffee and house-made pastries in the heart of the city.</p>
+                <a href="menu.html" class="inline-block bg-coffee-300 text-coffee-900 hover:bg-coffee-800 hover:text-coffee-100 font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg uppercase tracking-widest text-sm">
+                    View Our Menu
+                </a>
+            </div>
+        </section>
+
+        <section class="content-container">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+                <div class="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition border-t-4 border-coffee-800">
+                    <div class="text-5xl mb-4">☕</div>
+                    <h3 class="text-xl font-bold mb-2">Artisan Roasts</h3>
+                    <p class="text-coffee-900/80">We source ethically and roast locally every week for peak flavor profiles.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition border-t-4 border-coffee-800">
+                    <div class="text-5xl mb-4">🥐</div>
+                    <h3 class="text-xl font-bold mb-2">Fresh Pastries</h3>
+                    <p class="text-coffee-900/80">Baked in-house every morning using simple, high-quality ingredients.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition border-t-4 border-coffee-800">
+                    <div class="text-5xl mb-4">🛋️</div>
+                    <h3 class="text-xl font-bold mb-2">Cozy Atmosphere</h3>
+                    <p class="text-coffee-900/80">Fast WiFi, comfortable seating, and the perfect playlist for getting work done.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-coffee-900 text-coffee-100 py-8 text-center md:text-left">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-lg font-bold mb-4 text-coffee-300">Lagdamin Bean</h4>
+                <p class="text-sm opacity-80">Brewing community in Libas.</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4 text-coffee-300">Quick Links</h4>
+                 <ul class="text-sm space-y-2 opacity-80">
+                    <li><a href="about.html" class="hover:text-coffee-300">Our Story</a></li>
+                    <li><a href="menu.html" class="hover:text-coffee-300">Full Menu</a></li>
+                </ul>
+            </div>
+            <div>
+                 <h4 class="text-lg font-bold mb-4 text-coffee-300">Find Us</h4>
+                 <p class="text-sm opacity-80">Libas Purok 1<br>Roxas City</p>
+            </div>
+        </div>
+        <div class="text-center mt-8 pt-8 border-t border-coffee-800 text-sm opacity-60">
+            © 2026 The Roasted Bean. All rights reserved. Last Project ni Lagdamin.
+        </div>
+    </footer>
+
+</body>
+</html>

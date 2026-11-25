@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagdamin Bean - Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+theme: {
+extend: {
+colors: {
+coffee: {
+100: '#F5E6C8', 300: '#D7B19D', 800: '#6F4E37', 900: '#3E2723',
+}
+    }
+        }
+            }
+                }
+    </script>
+</head>
+<body class="bg-coffee-100 text-coffee-900 font-sans flex flex-col min-h-screen">
+
+    <header class="bg-coffee-800 text-coffee-100 shadow-md">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-wider mb-4 md:mb-0 hover:text-coffee-300 transition">Lagdamin Bean</a>
+            <nav>
+                <ul class="flex space-x-6 text-sm uppercase font-semibold tracking-widest">
+                    <li><a href="index.html" class="hover:text-coffee-300 transition pb-1">Home</a></li>
+                    <li><a href="about.html" class="hover:text-coffee-300 transition pb-1">About</a></li>
+                    <li><a href="menu.html" class="text-coffee-300 border-b-2 border-coffee-300 pb-1">Menu</a></li>
+                    <li><a href="contact.html" class="hover:text-coffee-300 transition pb-1">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow content-container bg-white my-8 rounded-xl shadow-lg p-8 md:p-12">
+        <h1 class="text-4xl font-bold text-center mb-4 text-coffee-800">Our Menu</h1>
+        <p class="text-center mb-12 opacity-80">Locally roasted coffee and fresh bites.</p>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-coffee-800 uppercase tracking-widest border-b-2 border-coffee-800 mb-6 pb-2 inline-block">Coffee & Espresso</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2">
+                <div class="menu-item">
+                    <div><span class="menu-title">House Drip</span><span class="menu-desc">Daily rotating single origin.</span></div>
+                    <span class="menu-price">$3.50</span>
+                </div>
+                <div class="menu-item">
+                    <div><span class="menu-title">Espresso</span><span class="menu-desc">Double shot of our signature blend.</span></div>
+                    <span class="menu-price">$3.00</span>
+                </div>
+                <div class="menu-item">
+                    <div><span class="menu-title">Latte</span><span class="menu-desc">Espresso and steamed milk.</span></div>
+                    <span class="menu-price">$5.00</span>
+                </div>
+                <div class="menu-item">
+                    <div><span class="menu-title">Cappuccino</span><span class="menu-desc">Espresso, steamed milk, heavy foam.</span></div>
+                    <span class="menu-price">$4.75</span>
+                </div>
+                <div class="menu-item">
+                    <div><span class="menu-title">Cold Brew</span><span class="menu-desc">Steeped for 18 hours. Smooth & strong.</span></div>
+                    <span class="menu-price">$5.25</span>
+                </div>
+                <div class="menu-item">
+                    <div><span class="menu-title">Mocha</span><span class="menu-desc">Espresso, artisan chocolate, milk.</span></div>
+                    <span class="menu-price">$5.50</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold text-coffee-800 uppercase tracking-widest border-b-2 border-coffee-800 mb-6 pb-2 inline-block">Fresh Pastries</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2">
+                <div class="menu-item">
+                    <div><span class="menu-title">Butter Croissant</span><span class="menu-desc">Flaky, buttery, classic.</span></div>
+                    <span class="menu-price">$4.00</span>
+                </div>
+                <div class="menu-item">
+                    <div><span class="menu-title">Almond Croissant</span><span class="menu-desc">Filled with frangipane.</span></div>
+                    <span class="menu-price">$4.75</span>
+                </div>
+                <div class="menu-item">
+                    <div><span class="menu-title">Seasonal Scone</span><span class="menu-desc">Ask for today's flavor.</span></div>
+                    <span class="menu-price">$3.75</span>
+                </div>
+                <div class="menu-item">
+                    <div><span class="menu-title">Avocado Toast</span><span class="menu-desc">Sourdough, chili flake, sea salt.</span></div>
+                    <span class="menu-price">$8.50</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-coffee-900 text-coffee-100 py-8 text-center md:text-left">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div><h4 class="text-lg font-bold mb-4 text-coffee-300">Lagdamin Bean</h4><p class="text-sm opacity-80">Brewing community in Libas.</p></div>
+            <div><h4 class="text-lg font-bold mb-4 text-coffee-300">Quick Links</h4><ul class="text-sm space-y-2 opacity-80"><li><a href="about.html" class="hover:text-coffee-300">Our Story</a></li><li><a href="menu.html" class="hover:text-coffee-300">Full Menu</a></li></ul></div>
+            <div><h4 class="text-lg font-bold mb-4 text-coffee-300">Find Us</h4><p class="text-sm opacity-80">123 Espresso Lane<br>Coffee City, CA 90210</p></div>
+        </div>
+        <div class="text-center mt-8 pt-8 border-t border-coffee-800 text-sm opacity-60">© 2026 The Roasted Bean. All rights reserved. Last Project ni Lagdamin.</div>
+    </footer>
+</body>
+</html>
